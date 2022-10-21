@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--заголовок сторінки-->
+        <title>Google</title>
+        <!--viewport - видима користувачу частина сторінки без прокрутки (для смартфонів і тд).
+        Так як сайт з адаптивним дизайном : width=device-width.
+        initial-scale=1.0 - початковий масштаб: 1.0-не масштабувати(1:1) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+         <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="div_index_vkut"><!-- Верхній рядок сторінки (перехід до сторінок Розширений пошук і Зображення) -->
+            <a class="index_vkut" href="advansesearch.html" target="_top">Розширений пошук</a>
+            <a class="index_vkut" href="image.html" target="_top">Зображення</a>
+        </div>
+        <div class="body"><!-- Середина сторінки (логотип Google)-->
+            <div class="div_img">
+                <img class="img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" usemap="#googlewiki">
+                <map name="googlewiki">
+                    <!-- Перехід на сатй Wikipedia при натисканні на зображення.shape="default"- визначає весь регіон -->
+                    <area shape="default" href="https://uk.wikipedia.org/wiki/%D0%93%D1%83%D0%B3%D0%BB" alt="googlewiki">
+                </map>
+            </div>
+        </div>
+       <!-- Рядок пошуку-->
+        <form action="https://google.com/search">
+            <div class="body">
+                <div class="form">
+                     <!-- Рядок для отримання текстових даних у користувача.
+                     В рядку виводимо текст всередині поля форми, який зникає при отриманні фокуса.
+                     name- для вводу, інакше нічого не буде відправлено.
+                     q – найпоширеніша ім’я для пошукових вводів, хоча воно не є обов’язковим-->
+                    <input class="input" type="text" placeholder="Пошук Google...." name="q">
+                </div>
+            </div>
+            <!-- Рядок для клавіш пошуку: Пошук Google і Мені пощастить-->
+            <div class="body">
+                <!--"submit"- кнопка для відправлення форми.class="btn btn-light"-світло-сіра кнопка -->
+                <input id="btn" class="btn btn-light" type="submit" value="Пошук Google">
+                <input id="btn" class="btn btn-light" type="submit" name="btnI" value="Мені пощастить">
+            </div>
+        </form>
+   </body>
+</html>
