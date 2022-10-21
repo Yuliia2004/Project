@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!--заголовок сторінки-->
+        <title>Advanced Search-Google</title>
+        <!--viewport - видима користувачу частина сторінки без прокрутки (для смартфонів і тд).
+        Так як сайт з адаптивним дизайном : width=device-width.
+        initial-scale=1.0 - початковий масштаб: 1.0-не масштабувати(1:1) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="adv_index_top_row"> <!-- Перехід до гооловної сторінки-->
+            <a class="index_vkut" href="index.html" target="_top">Пошук Google</a>
+            <a id="adv_link" href="index.html" target="_top"></a>
+        </div>
+
+        <div id="adv_title">
+            <label>Розширений пошук</label><!--<label>- робить зв'язок між текстом і елементом форми-->
+        </div>
+        <div id="adv_line"></div> <!--Нижній кордон суцільний світло сірий-->
+        <div id="adv_div_form"><!--Рамка навколо полів пошуку і їх назв-->
+            <div id="adv_form_title"><!--Оформлення "Знайти сторінки із..."-->
+                <span>Знайти сторінки із...</span>
+            </div>
+            <form action="https://google.com/search"><!--Створюємо форму із 4 полів для розшириного пошуку-->
+                <div class="adv">
+                    <div class="adv_div_param_title">
+                        <label class="label">всіма цими слова:</label><!--Назва поля для вводу-->
+                    </div>
+                    <div class="adv_div_param_input">
+                        <input class="adv_input" type="text" name="as_q"><!--Поле для вводу"всіма цими слова:" -->
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="adv_div_param_title">
+                        <label class="label">точним словом або фразою:</label><!--Назва поля для вводу-->
+                    </div>
+                    <div class="adv_div_param_input">
+                        <input class="adv_input" type="text" name="as_epq"><!--Поле для вводу"точним словом або фразою:" -->
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="adv_div_param_title">
+                        <label class="label">будь-яким з цих слів:</label><!--Назва поля для вводу-->
+                    </div>
+                    <div class="adv_div_param_input">
+                        <input class="adv_input" type="text" name="as_oq"><!--Поле для вводу"будь-яким з цих слів:" -->
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="adv_div_param_title">
+                        <label class="label">жодним з цих слів:</label><!--Назва поля для вводу-->
+                    </div>
+                    <div class="adv_div_param_input">
+                        <input class="adv_input" type="text" name="as_eq"><!--Поле для вводу"жодним з цих слів:" -->
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="adv_div_param_title">
+                    </div>
+                    <div class="adv_div_param_input">
+                        <!--"submit"- кнопка для відправлення форми.class="btn btn-light"-світло-сіра кнопка -->
+                        <input id="adv_btn" class="btn btn-primary" type="submit" value="Розширений пошук">
+                    </div>
+                </div>
+            </form>
+    </div>
+   </body>
+</html>
